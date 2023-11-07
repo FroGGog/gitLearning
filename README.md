@@ -34,7 +34,7 @@ Send changes to a remote repository git push
 You have already gone through the entire "commit cycle": prepared the files using git add, committed them with a comment with the git commit -m command. It remains to upload the contents of the local repository to   GitHub. The git push command is responsible for this.  
 For the first time, this command must be called with the -u flag and the parameters origin (the name of the remote repository) and main or master (the name of the current branch). The -u flag will link the local   branch with the remote branch of the same name
 
-### 7.4 File README.md
+### 1.4 File README.md
 In order for other users, as well as potential clients or employers, to understand what the project is, it needs to be described. It is customary to specify such a description in the file README.md   
 As a rule, in README.md you can find the following information about the project:
 * The name of the project and its brief description: the cream was created for what, which solves the tasks and which closes the problems.
