@@ -12,7 +12,7 @@ files for sharing with other people. Indeed, GitHub has become the most popular 
 
 ### 1.1 What is SSH. Generating an SSH key
 
-One of the most common network protocols is SSH (from the English Secure Shell Protocol). It provides secure data   exchange on the network. Using this protocol, you can receive data from a remote computer or send it to it. The   traffic is encrypted, so the protocol is secure.  
+One of the most common network protocols is SSH (Secure Shell Protocol). It provides secure data exchange on the network. Using this protocol, you can receive data from a remote computer or send it to it. The   traffic is encrypted, so the protocol is secure.  
 SSH uses a key pair for security public and private:
 * The private key is stored only on your computer and should not be transferred to anyone else. It is used to decrypt data.
 * The public key is accessible to everyone and is used to encrypt data. They can be decrypted with a paired private key.
@@ -47,4 +47,30 @@ README.md a text file that can be created with the touch command and then edited
 Advantage README.md the fact is that team work tools (such as GitHub) can display its contents in the browser in the form of convenient markup. To do this, you need to not just fill in the text, but also  
 adjust the font, headers and margins using markdown. Markdown is a special markup language. It allows you to format a text document beautifully.  
 
+
+### 1.5 What is a hash. Hashing commits
+
+Hashing ( "hack", "crumble", "hash") is a way to transform a set of data and get their "fingerprint".  
+Commit information is a set of data: when the commit was made, the contents of the files in the repository at the time of the commit and a link to the previous, or parent, commit.  
+Git hashes (converts) commit information using the SHA-1 algorithm (from the English Secure Hash Algorithm "secure hashing algorithm") and receives for each commit its own unique hash result of hashing.  
+Usually a hash is a short (40 characters in the case of SHA 1) string, which consists of the digits 0-9 and the Latin letters A to F (it does not matter whether uppercase or lowercase). It has the following   important properties:  
+* if the hash is obtained twice for the same set of input data, the result is guaranteed to be the same;
+* if at least something in the source data changes (at least one character), then the hash will also change (and greatly).
+Git stores a table of matches hash → commit information. If you know the hash, you can find out everything else: the author and date of the commit and the contents of the committed files. We can say that the  
+hash is the main identifier of the commit.  
+
+### 1.6 File statuses in Git
+
+Untracked/tracked, staged and modified statuses  
+One of the key tasks of Git is to track changes to files in the repository. To do this, each file is marked with a status. Let's consider the main ones.  
+1. __untracked__: We said that new files in the Git repository are marked as untracked, that is, untraceable. Git "sees" that such a file exists, but does not monitor changes in it. The untracked file has no previous versions fixed in the comments or via the git add command.
+2. __staged__ (_"prepared"_) After executing the git add command, the file gets into the staging area (from the English stage — "stage", "stage [of the process]" and area — "area"), that is, in the list of files that will be included in the commit. At this moment, the file is in the staged state.
+3. __tracked__: The tracked state is the opposite of untracked. It is quite broad in meaning: it includes files that have already been committed using git commit, as well as files that have been added to the staging area by the git add command. That is, all files in which Git tracks changes in one way or another.
+4. __modified__: The modified state means that Git compared the contents of the file with the last saved version and found differences. For example, the file was compromised and then changed.
+
+```mermaid
+graph LR;
+    A-->B;
+    A-->C;
+    B-->D;
 
