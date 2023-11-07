@@ -70,8 +70,8 @@ One of the key tasks of Git is to track changes to files in the repository. To d
 
 ```mermaid
 graph LR;
-    (Untracked)-->|git add| (Staged);
-    (Staged)-->|git commit| (Tracked);
-    (Tracked)-->|changes| (Modified);
-    (Modified)-->|git add| (Staged);
-    (Staged)-->|changes| (Modified)
+    A(Untracked)-->|git add| B(Staged);
+    B(Staged)-->|git commit| C(Tracked);
+    C(Tracked)-->|changes| D(Modified);
+    D(Modified)-->|git add| B(Staged);
+    B(Staged)-->|changes| D(Modified)
