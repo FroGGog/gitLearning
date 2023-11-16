@@ -2,6 +2,8 @@
 ---
 I'm learning git and github right now, and this is my training task.
 
+The link to Notion page with short summary of Yandex Practicum Course: https://www.notion.so/Git-Cheatsheet-5c60e0a9588d4a83b8e26e00b27a6be6?pvs=4
+
 ## 1 Getting to know GitHub
 
 GitHub is a platform for storing IT projects and collaborating on them using Git. In fact, this is a site where you can upload your project <br>
