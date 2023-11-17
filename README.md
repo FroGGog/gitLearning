@@ -4,9 +4,17 @@ We are learning git and github right now, and this is our training task.
 
 The link to Notion page with short summary of Yandex Practicum Course: https://www.notion.so/Git-Cheatsheet-5c60e0a9588d4a83b8e26e00b27a6be6?pvs=4
 
+---
+
 ## 1 Getting to know GitHub
 
-//Few words about GitHub, what it is, why we should or not use it 
+Git is a **version control system** that helps track changes in a project. This tool can be used for both individual and team work.<br>
+Git allows you to save changes locally and, if necessary, return to previous versions of the project. You can also create a remote copy on a hosting platform that works with Git and share the result with others.<br>
+
+
+In order for Git to start tracking changes in the project, the folder with the files of this project must be made a Git repository.<br>
+* **git init**
+
 
 ## 2 Starting working with Git.
 
