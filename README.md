@@ -1,6 +1,7 @@
 # GitHub
 ---
-We are learning git and github right now, and this is our training task.
+We are learning git and github right now, and this is our training task.  
+
 ---
 
 ## 1 Getting to know GitHub
