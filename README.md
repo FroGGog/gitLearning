@@ -19,21 +19,21 @@ In order for Git to start tracking changes in the project, the folder with the f
 ## 2 Starting working with Git.
 
 //Main commands to start git repository and etc
-1. git init - initialize Git repository
-2. git status - check repository status
-3. git add - prepare files for saving
-4. git commit - make commit
-5. git remote add - bind a remote repository to a local one
-6. git push - send changes to a remote repository
-7. git pull - pick up changes from a remote repository
-8. git restore --staged 'file' - perform unstage of changes
-9. git reset --hard 'commit hash' - "roll back" commit
-10. git clone - clone repository
-11. git branch - view project branches 
-12. git branch 'branch name' - create a branch
-13. git checkout 'branch name' - switch to another branch
-14. git merge 'branch name' - perform a merge
-15. git branch -D 'branch name' - delete a branch after merging  
+*  *git init* - initialize Git repository
+*  *git status* - check repository status
+*  *git add* - prepare files for saving
+*  *git commit* - make commit
+*  *git remote add* - bind a remote repository to a local one
+*  *git push* - send changes to a remote repository
+*  *git pull* - pick up changes from a remote repository
+*  *git restore --staged 'file'* - perform unstage of changes
+*  *git reset --hard 'commit hash'* - "roll back" commit
+*  *git clone* - clone repository
+*  *git branch* - view project branches 
+*  *git branch 'branch name'* - create a branch
+*  *git checkout 'branch name'* - switch to another branch
+*  *git merge 'branch name'* - perform a merge
+*  *git branch -D 'branch name'* - delete a branch after merging  
 
 ## * File .md how to work with them
 
