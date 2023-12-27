@@ -3,6 +3,9 @@
 We are learning git and github right now, and this is our training task.  
 
 ---
+## *Useful links.
+1. [Git](https://git-scm.com/)https://git-scm.com/
+2. [30MostUsefulCommands](https://habr.com/ru/companies/ruvds/articles/599929/)https://habr.com/ru/companies/ruvds/articles/599929/
 
 ## 1 Getting to know GitHub
 
